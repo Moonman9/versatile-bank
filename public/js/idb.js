@@ -38,7 +38,7 @@ request.onupgradeneeded = function(event) {
     const transaction = db.transaction(['new_transaction'], 'readwrite');
   
     // access your pending object store
-    const budgetObjectStore = transaction.objectStore('new_pizza');
+    const budgetObjectStore = transaction.objectStore('new_transaction');
   
     // get all records from store and set to a variable
     const getAll = budgetObjectStore.getAll();
